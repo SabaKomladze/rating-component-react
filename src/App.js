@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Result from "./components/Result";
+import Rate from "./components/Rate";
+import { useState } from "react";
 function App() {
+  const [submit, setSubmit] = useState(false);
+  const [rate, setRate] = useState();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {submit ? (
+        <Result  rate={rate} />
+      ) : (
+        <Rate setSubmit={setSubmit} rate={rate} setRate={setRate} />
+      )}
     </div>
   );
 }
