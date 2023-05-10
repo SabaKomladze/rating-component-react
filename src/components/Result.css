@@ -8,14 +8,16 @@
   margin: 0 auto;
   width: 327px;
   height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.msg {
-  background: #262e38;
-  font-size: 15px;
-  line-height: 24px;
-  text-align: center;
-  color: #fc7614;
-  width: 193px;
-  height: 32px;
-  border-radius: 22.5px;
+.thank{
+  margin-top:0 ;
+}
+img {
+  margin: 0 auto;
+}
+.mobile{
+  margin-top: 34px;
 }
