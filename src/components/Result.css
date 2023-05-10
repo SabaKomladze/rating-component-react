@@ -3,6 +3,7 @@
     98.96% 98.96% at 50% 0%,
     #232a34 0%,
     #181e27 100%
+    
   );
   border-radius: 30px;
   margin: 0 auto;
@@ -11,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 .thank{
   margin-top:0 ;
